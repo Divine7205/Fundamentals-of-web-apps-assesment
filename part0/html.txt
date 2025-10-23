@@ -1,0 +1,11 @@
+HyperText Markup Language(HTML) is the code that structres a website. It uses tags that wrap around text to define the role and behaviour.
+A good example is the <ul> and <li> tag. The <ul> informs the browser that the elements should be treated as an unordred list(not numbered list or list with bullet points). While the <li> element defines the list element.
+The tags also have attributes that define certain characteristics of the tags. A good example is the "type" attribute in input which define the type of input the tag should collect whether number, text or password.
+It normally consists of a <!doctype html> tag used to ensure your code runs correctly, a <html> tag which is the root element and wraps around the whole document, a <head> tag that defines contexts your don't usually what to show to the user, and a <body> tag that usually holds displayable context.
+HTML also include tags that don't have text context. They are usually self closing ( like <img /> ). Some examples include the <img> tag and the <input> tag
+Some common tags used include the <img>, <p>, <h1>, <section>, <ul>, <a> etc. which are used to define different functions
+The <img> tag is used when you what to include an image into the website. It contain attributes like src and alt. The src attribute is used to define the location of the image that should be displayed and alt attribute defines the text to display is the image could not load.
+The <p> tag is used to define a new paragraph and is used to for normal text content.
+The header tags <h1>...<h6> are used to define headings like the About us in an about us page. the 1-6 represent the size of the header reducing from <h1> to <h6>.
+The <section> tag is used to destinguish different sections of the webpage.
+The <a> tag is used to create links to other parts of the website or another website. It is a very important tag that helps users move from one part of the website to another 
