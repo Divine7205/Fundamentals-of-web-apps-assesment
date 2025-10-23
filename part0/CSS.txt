@@ -1,0 +1,11 @@
+Cascading Style Sheet(CSS) is the code that is used to add Style to the website making it more presentable.
+Styling in CSS involves changing the property of the selected tag. Properties include things like backgroung-color, Font-family, color, border, margin and padding etc.
+Each property changes something about the element selected. For example you can change the text color of the <p> tag to red by changing its "color" property to red.
+You can write css code directly in the Html file or create a seperate css file and link it to the html file using the link tag. It should look something like this "<link href="styles/style.css" rel="stylesheet" />" where the "href" attribute defines the location of the css file.
+You can change multiple Properties by seperating them with a semi-colon. this help the browser seperate the property-values of one from another property.
+You can also apply the same styles for different selectors by seperating them with a coma.
+Each tag can be reprisented as a box which has various css properties that can be manipulated, these are cales the box model.
+The margin and padding property are common attribute of the box model that help manage spacing within and outside the box.
+Maargin defines the space that should be observed outside the box and Padding defines the space that should be seen within the box.
+The border property is also among them and helps show the border line of the container.
+Also properties like width and heigth help set the size of the box. A good example would be when styling an image. You can set the width and heigth of the image to fit into the desired view.
