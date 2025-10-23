@@ -1,0 +1,18 @@
+---
+config:
+  theme: dark
+---
+sequenceDiagram
+  participant B as browser
+  participant S as server
+  
+  Note right of B: Save button clicked calling the onSubmit() function.
+  Note right of B: values added to note variable.
+  Note right of B: The redrawNotes() function updates the list and displays it
+  Note right of B: sendToServer() function is call take the values and makes the api Call
+
+  B->>S: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+  activate S
+  Note left of S: List updated
+  S-->>B: 201 response {"message": "note created"}
+  deactivate S
