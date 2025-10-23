@@ -1,0 +1,39 @@
+---
+config:
+  theme: dark
+---
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note left of browser: Save button clicked
+    browser->>server: POST to https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    Note right of server: Add new entry
+    server-->>browser: 302 response with redirect response
+    deactivate server
+    
+    Note right of browser: redirected to https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the css file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
+
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: new list
+    deactivate server
+
+    Note right of browser: The browser executes the callback function that renders the notes
